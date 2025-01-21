@@ -1,0 +1,113 @@
+.App {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: linear-gradient(135deg, #ff6b70, #fad0c4);
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .input-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  input {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background: linear-gradient(90deg, #28a745, #218838);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(90deg, #218838, #1e7e34);
+  }
+  
+  .task-list {
+    list-style: none;
+    padding: 0;
+    max-width: 500px;
+    margin: 0 auto;
+    background: linear-gradient(120deg, #f8f9fa, #e9ecef);
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-item {
+    padding: 15px;
+    margin: 8px 10px;
+    background: radial-gradient(circle, #ffffff, #f1f1f1);
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  .task-item:hover {
+    background: radial-gradient(circle, #e9ecef, #f8f9fa);
+    transform: translateY(-3px);
+  }
+  
+  .task-item.completed span {
+    text-decoration: line-through;
+    color: #aaa;
+  }
+  
+  .task-item button {
+    background: linear-gradient(90deg, #dc3545, #c82333);
+    border: none;
+    padding: 8px 15px;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .task-item button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(90deg, #c82333, #a71d2a);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  }
